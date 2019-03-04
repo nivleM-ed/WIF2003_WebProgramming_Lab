@@ -1,3 +1,4 @@
+
 header {
     background-color: #6495ED;
     height: 160px;
@@ -30,6 +31,10 @@ nav {
 nav a {
     padding-bottom: 15px;
     text-decoration: none;
+}
+
+nav a:hover {
+    color: yellow;
 }
 
 main {
