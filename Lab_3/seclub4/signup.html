@@ -4,68 +4,81 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Sign Up</title>
-    <!-- <link rel="stylesheet" href="/assets/css/seclub.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
 </head>
 
-<body>
-    <div id="wrapper">
+<body style="background-color:#ADD8E6">
+    <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <!-- <img src="/assets/pic/selogo.jpg" alt="SE Logo" height="30px" width="30px"> -->
             <a class="navbar-brand" href="#"><img src="/assets/pic/selogo.jpg" height="30px" width="30px">Software
                 Engineering Club</a>
             <div>
                 <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">EVENTS</a>
+                    </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">HOME
+                        <a class="nav-link" href="signup.html">SIGN UP
                             <span class="sr-only">(current)</span>
                         </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">EVENTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">SIGN UP</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <main>
-            <div>
-                <h2>Sign Up as SE Club Member</h2>
-
-                <p>Please fill in this form to create an account. Required information is marked with an asterisk (*).</p>
-            </div>
-            <div>
-                <form>
-                    <label for="name">*Name:</label>
-                    <input type="text" id="name" required>
-                    <label for="studid">*Student ID:</label>
-                    <input type="text" id="studentid" required>
-                    <label for="email">*E-mail:</label>
-                    <input type="email" id="email" required>
-                    <label for="pass">*Password:</label>
-                    <input type="password" id="password" required>
-                    <label for="repeatpass">*Repeat Password:</label>
-                    <input type="password" id="repeatpassword" required>
-                    <label for="birthday">Birthday:</label>
-                    <input type="date" id="bday">
-                    <label for="favevent">Select your most favourite event:</label>
-                    <select id="favevent">
-                        <option value="Workshop">Workshop</option>
-                        <option value="Talk">Talk</option>
-                        <option value="SE Day">SE Day</option>
-                        <option value="Competition">Competition</option>
-                        <option value="Gathering with alumni">Gathering with alumni</option>
-                    </select>
-                    <input type="submit" id="newSubmit">
-                </form>
-            </div>
-        </main>
+        <div class="jumbotron" style="background-color:#F0F8FF">
+            <main>
+                <div>
+                    <h2>Sign Up as SE Club Member</h2>
+                    <p>Please fill in this form to create an account. Required information is marked with an asterisk(*).</p>
+                    <form>
+                        <div class="form-group mb-2">
+                            <label for="name">*Name:</label><br>
+                            <input type="text" id="name" required class="col-2">
+                        </div>
+                        <div class="form-group">
+                            <label for="studid">*Student ID:</label><br>
+                            <input type="text" id="studentid" required class="col-2">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">*E-mail:</label><br>
+                            <input type="email" id="email" required class="col-2">
+                        </div>
+                        <div class="form-group">
+                            <label for="pass">*Password:</label><br>
+                            <input type="password" id="password" required class="col-2">
+                        </div>
+                        <div class="form-group">
+                            <label for="repeatpass">*Repeat Password:</label><br>
+                            <input type="password" id="repeatpassword" required class="col-2">
+                        </div>
+                        <div class="form-group">
+                            <label for="birthday">Birthday:</label><br>
+                            <input type="date" id="bday" class="col-2">
+                        </div>
+                        <div class="form-group">
+                            <label for="favevent">Select your most favourite event:</label><br>
+                                    <select id="favevent" class="form-control col-2">
+                                            <option value="Workshop">Workshop</option>
+                                            <option value="Talk">Talk</option>
+                                            <option value="SE Day">SE Day</option>
+                                            <option value="Competition">Competition</option>
+                                            <option value="Gathering with alumni">Gathering with alumni</option>
+                                        </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </div>
+    <div>
         <footer class="container text-center font-italic">
             <hr>Copyright &copy 2019 UM Software Engineering Club<br><a href="mailto:umseclub@um.edu.my">umseclub@um.edu.my</a></footer>
     </div>
