@@ -7,7 +7,7 @@ var q1b = document.getElementById("q1b");
 q1b_ans = ("WIF2003" + "Web Programming")[10];
 q1b.innerHTML = "q1b = " + q1b_ans;
 
-var q1c = document.getElementById("q1c");
+var q1c = document.getElementById("q1c");   
 q1c_ans = "helloworld".length % "him\\".length;
 q1c.innerHTML = "q1c = " + q1c_ans;
 
@@ -86,10 +86,10 @@ for (var x = 0; x < movieObj.movie.length; x++) {
 }
 
 //Lab 4 Question 10
-var val;
+
 function prettyPrint(obj) {
-    for(var x in obj) {
-        val = obj[x]
+    for(var x in obj) {q
+        var val = obj[x]
         console.log(x,": ",val);
     }
 }
