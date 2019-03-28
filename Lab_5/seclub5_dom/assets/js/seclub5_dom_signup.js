@@ -3,7 +3,8 @@ var arr = {
     code: ["WS","TA","SE","CO","GA"],
     name: ["Workshop", "Talk", "SE Day", "Competition", "Gathering with alumni"],
     venue: ["MM1", "DK2", "The Cubes", "MM3", "Student Centre", "Block B"]
-}
+}  
+
 var favevent = document.getElementById("favevent");
 var event = document.getElementById("eventvenue");
 var venue_no;
