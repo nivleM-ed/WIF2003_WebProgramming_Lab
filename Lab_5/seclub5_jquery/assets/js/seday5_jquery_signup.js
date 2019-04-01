@@ -9,18 +9,9 @@ for(var i = 0; i < arr.name.length; i++) {
 }
 
 $("#favevent select").on("change", function(){
-    var name = $("#favevent select").find(":selected").val();    
+    var value = $("#favevent select").find(":selected").val();    
     // var venue_no = getVenue(name); 
     console.log(name);
-    $("#eventvenue").html("Event venue is " + arr.venue[name]);
-   
+    $("#eventvenue").html("Event venue is " + arr.venue[value]);
 });
 
-// function getVenue(name) {
-//     for(var x=0; x<arr.code.length; x++) {
-//         if(arr.code[x] == name) {
-//             return x;
-//         }
-//     }
-//     return -1;
-// }
