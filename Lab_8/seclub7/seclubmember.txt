@@ -1,0 +1,1 @@
+{"uname":"test","studentID":"test","email":"test@test.com","password":"test","reapeatpassword":"test","birthday":"2019-04-23","event":"Workshop"}
